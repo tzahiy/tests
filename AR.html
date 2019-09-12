@@ -1,0 +1,28 @@
+<html>
+<head>
+    <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.7.8/aframe/build/aframe-ar.js"></script>
+</head>
+<body style='margin : 0px; overflow: hidden;'>
+<a-scene >
+    <a-entity id="rig" position="0 0 -6" scale="0.2 0.2 0.2">
+        <a-box position="0 0.0 0" depth="3" height="1.5" width="9" color="blue" ></a-box>
+
+        <a-cylinder position="-3 3.75 0"  height="6" radius="1.5" color="green" ></a-cylinder>
+        <a-cylinder position="3 3.75 0"   height="6" radius="1.5" color="green" ></a-cylinder>
+
+        <a-box position="0 7.5 0" depth="3" height="1.5" width="9" color="blue"  ></a-box>
+
+        <a-entity position="0 9.66 0"  >
+            <a-box position="-3.15 0.0 0" depth="3" height="0.1" width="9" rotation="0 0 45" color="red" ></a-box>
+            <a-box position="3.15 0.0 0" depth="3" height="0.1" width="9" rotation="0 0 -45" color="red" ></a-box>
+        </a-entity>
+    </a-entity>
+</a-scene>
+<!--
+    <a-entity id="rig" position="25 10 0">
+        <a-entity id="camera" camera look-controls></a-entity>
+    </a-entity>
+-->
+</body>
+</html>
